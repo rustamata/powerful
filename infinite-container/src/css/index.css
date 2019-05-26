@@ -1,0 +1,175 @@
+/*body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Slabo 27px', serif;
+  background: #f5f5f5;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: max-content;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-right: 10px
+}
+
+input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input::input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+/* POPUP styles for HoverButton*/
+.tooltip_style {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip_style .tooltiptext {
+  cursor: pointer;
+  visibility: hidden;
+  width: 70px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip_style .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip_style:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupbtntext,
+.btntext {
+  cursor: default;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 20%;
+}
+
+.popupbtncontainer,
+.btncontainer {
+  border: solid;
+  size: auto;
+  padding-left: 15px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
+
+.popupleft {
+  margin-left: -72px !important;
+}
+
+.popupright {
+  margin-left: 1px !important;
+}
+
+/* Container styles*/
+.container_style {
+  white-space: nowrap;
+  height: auto;
+  border: solid;
+  padding: 10px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.containerElement {
+  margin-left: 10px;
+}
+
+.box_style {
+  border: solid;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: inherit;
+  cursor: pointer;
+}
+
+.div_center_w800_style {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.padding_topleft_block{
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
+.padding_top_block{
+  padding-top: 10px;
+}
+
+.min-height_100px{
+  min-height: 100px;
+}
